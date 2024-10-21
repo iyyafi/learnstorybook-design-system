@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@iyyafi/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -84,5 +84,8 @@
   "dependencies": {
     "init": "^0.1.2",
     "storybook": "^8.3.6"
-  }
+  },
+  "description": "Storybook design systems tutorial",
+  "repository": "git@github.com:iyyafi/learnstorybook-design-system.git",
+  "author": "Iyyafi Qolbi <iyyafi@gmail.com>"
 }

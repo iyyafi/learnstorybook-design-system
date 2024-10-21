@@ -51,6 +51,6 @@ export const Small = {
 export const Featured = {
   args: {
     primary: false,
-    label: "Button"
-  }
+    label: 'Button',
+  },
 };

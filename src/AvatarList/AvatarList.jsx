@@ -76,7 +76,13 @@ export function AvatarList({ loading, users, userCount, size, ...props }) {
 }
 
 AvatarList.propTypes = {
+  /**
+   * Are we loading avatar data from the network?
+   */
   loading: PropTypes.bool,
+  /**
+   * A (sub)-list of the users whose avatars we have data for. Note: only 3 will be displayed.
+   */
   users: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -84,7 +90,13 @@ AvatarList.propTypes = {
       avatarUrl: PropTypes.string,
     }),
   ),
+  /**
+   * The total number of users, if a subset is passed to `users`.
+   */
   userCount: PropTypes.number,
+  /**
+   * AvatarList comes in four sizes. In most cases, you’ll be fine with `medium`.
+   */
   size: PropTypes.oneOf(Object.keys(sizes)),
 };
 
